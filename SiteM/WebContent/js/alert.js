@@ -26,10 +26,16 @@ function clickBtn1(){
 	var name = RegistForm.name.value;
 	var adress = RegistForm.adress.value;
 	var age = RegistForm.age.value;
+	var useridn  = userid.length;
+
 	//入力空チェック
-    if (userid == "" ){
-    	alert("userid入力してまへんで");
-        return false;
+	if(useridn > 100){
+		if (userid == "" ){
+	    	alert("userid入力してまへんで");
+	        return false;
+		}
+		alert("100文字でかけやどあほ");
+		return false;
     }else if(password == ""){
     	alert("password入力してまへんで");
     	return false;

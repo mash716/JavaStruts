@@ -11,7 +11,7 @@
     <%-- 入力項目 --%>
 <bean:write name="DeleteForm" property="userid"
             scope="request" ignore="true" />様を削除しました<br>
-    <a href="http://localhost:8022/SiteM/adminmain.jsp">戻る</a>
+    <a href="http://localhost:8022/SiteM/adminLogin.jsp">戻る</a>
 </html:form>
 
 </body>

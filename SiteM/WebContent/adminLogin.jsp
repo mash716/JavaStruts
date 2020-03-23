@@ -6,6 +6,7 @@
 <head><title>管理者ログイン画面</title></head>
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/alert.js"></script>
 <body>
 <h1>管理者ログイン画面</h1>
 <html:form action="/Admin">

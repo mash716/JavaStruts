@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="js/alert.js"></script>
 <title>管理者画面</title>
 
 </head>

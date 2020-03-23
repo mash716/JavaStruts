@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <script src="/jQuery/jquery.min.js"></script>
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/alert.js"></script>
   </head>
   <body>
     <div class="container">

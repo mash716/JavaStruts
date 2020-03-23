@@ -6,6 +6,7 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="css/base.css">
 <title>注文書</title>
+<script type="text/javascript" src="js/alert.js"></script>
 </head>
 <body>
 <header>

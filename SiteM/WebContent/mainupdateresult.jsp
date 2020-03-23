@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<script type="text/javascript" src="js/alert.js"></script>
 <html:form action="/Update">
 <h1>編集結果画面</h1>
 		<html:hidden name="UpdateForm" property="userid"/>

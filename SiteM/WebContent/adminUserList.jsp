@@ -7,6 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<script type="text/javascript" src="js/alert.js"></script>
 <title>AdminUserList</title>
 </head>
 <body>

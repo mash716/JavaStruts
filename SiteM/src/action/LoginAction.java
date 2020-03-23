@@ -34,15 +34,8 @@ public final class LoginAction extends Action {
 		LoginLogic bo = new LoginLogic();
 		boolean result = bo.execute(loginbean);
 
-		//空白チェックとDBの値チェック(null)
-		if(userid.equals("") || password.equals("")){
-			System.out.println("BBBB");
-			return (mapping.findForward("fail"));
-		}else if(userid.equals("") && password.equals("")) {
-			System.out.println("CCCC");
-			return (mapping.findForward("fail"));
-		}else if(result) {
-			System.out.println("AAAA");
+		//ログインデータがある場合
+		if(result) {
 			//DB値の取得
 			AccountBean resultDB = ado.findByLogin(loginbean);
 	        String name = resultDB.getName();
@@ -54,8 +47,7 @@ public final class LoginAction extends Action {
 	        daf.set("age", age);
 			return (mapping.findForward("success"));
 		}
-		System.out.println("EEEE");
-		//戻り値で取得する
-		return (mapping.findForward("fail"));
+		//ログインデータがない場合
+		return (mapping.findForward("failer"));
     }
 }

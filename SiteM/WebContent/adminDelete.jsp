@@ -9,7 +9,9 @@
 <script type="text/javascript" src="js/alert.js"></script>
 </head>
 <body>
+<div id="js-target">
 <h1>ユーザ削除画面</h1>
+</div>
 <P>
    現在の登録者は下記の通りです
    <TABLE BORDER="1">
@@ -20,7 +22,6 @@
          <TH>アドレス</TH>
          <TH>年齢</TH>
       </TR>
-
       <!-- 登録者の一覧を表示するエリア -->
      <logic:iterate
         id="login"

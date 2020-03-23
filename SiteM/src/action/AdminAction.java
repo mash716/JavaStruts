@@ -14,7 +14,6 @@ public final class AdminAction extends Action {
               HttpServletRequest request, HttpServletResponse response)
                 throws Exception {
 		  request.setCharacterEncoding("utf-8");
-
         //formの値の取得
     	DynaActionForm  daf = (DynaActionForm )form;
         //jspからのプロパティ取得

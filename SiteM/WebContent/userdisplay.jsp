@@ -6,6 +6,7 @@
 <html:html>
 <head><title>Welcome main</title></head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/alert.js"></script>
 <body>
 <html:hidden name="LoginForm" property="password"/>
 <html:hidden name="LoginForm" property="userid"/>

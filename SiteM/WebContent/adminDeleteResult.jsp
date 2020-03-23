@@ -5,6 +5,7 @@
 <html:html>
 <head><title>User Delete</title></head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="js/alert.js"></script>
 <body>
 <h1>ユーザ削除画面</h1>
 <html:form action="/Delete">

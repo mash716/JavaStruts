@@ -7,8 +7,6 @@
 
     <!--  フォーム  -->
     <form-beans>
-      <form-bean name="helloWorldForm" type="com.petitmonte.form.HelloWorldForm"/>
-        <!-- (1)動的アクション・フォームBeanの指定 -->
 
         <form-bean
                     name="LoginForm"
@@ -174,8 +172,8 @@
   	<global-forwards>
       <forward name="fail" path="/main.jsp"/>
       <forward name="failad" path="/adminmain.jsp"/>
-      <forward name="failer" path="/erroradmin.jsp"/>
-      <forward name="failvaluenot" path="/errornotvalueadmin.jsp"/>
+      <forward name="failer" path="/error/erroradmin.jsp"/>
+      <forward name="failvaluenot" path="/error/errornotvalueadmin.jsp"/>
 
     </global-forwards>
 

@@ -72,7 +72,8 @@ public class AdminDeleteUserAciton extends Action{
 	            }
 	        }
 		}catch(NullPointerException e){
-			e.printStackTrace();
+			//例外処理の結果
+			//e.printStackTrace();
 			return (mapping.findForward("failvaluenot"));
 		}
         return (mapping.findForward("failer"));

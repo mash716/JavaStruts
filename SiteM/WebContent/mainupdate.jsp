@@ -6,6 +6,7 @@
 <html>
 <head>
 <script type="text/javascript" src="js/alert.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <html:form action="/Update">
 <h1>編集画面</h1>
@@ -39,8 +40,10 @@
 	</tbody>
 
 	</table>
-    <html:submit property="submit" value="編集" onclick="return clickBtn4();" />
-    <a href="http://localhost:8022/SiteM/main.jsp">メイン画面へ戻る</a>
+    <html:submit property="submit" value="編集"  styleId="update" />
+    <div id="update">
+    	<a  href="http://localhost:8022/SiteM/main.jsp" >メイン画面へ戻る</a><br>
+    </div>
 </div>
 </html:form>
 <html:form action="/Login">

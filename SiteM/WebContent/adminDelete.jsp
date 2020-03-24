@@ -7,6 +7,7 @@
 <title>User Delete</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/alert.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <div id="js-target">
@@ -62,11 +63,13 @@
    </TABLE>
 </P>
 <html:form  action="/Delete"  >
+<div id="js-target1">
     <%-- 入力項目 --%>
     <p>userid:</p><html:text property="userid" />
     <p>password:</p><html:text property="password" />
     <br>
-    <html:submit property="submit"  value="削除" onclick="return clickBtn();"/>
+    <html:submit property="submit"  value="削除" onclick="return clickBtn();" styleId="delete" />
+</div>
 </html:form>
 
 <html:form  action="/Admin"  >

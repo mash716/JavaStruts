@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <script type="text/javascript" src="js/alert.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <title>管理者画面</title>
 
 </head>

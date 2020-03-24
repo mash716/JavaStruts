@@ -34,6 +34,10 @@ public final class RegisterAction extends Action {
 		RegisterDao rdo = new RegisterDao();
 		rdo.RegisterInsert(accountbean);
 
+		//複数DB登録確認
+//		RegisterDao2 rdo2 = new RegisterDao2();
+//		rdo2.RegisterInsert(accountbean);
+
         //(3)プロパティnameに値を表示
         daf.set("userid", userid);
         daf.set("password", password);

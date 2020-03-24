@@ -7,6 +7,7 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/alert.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <body>
 <h1>管理者ログイン画面</h1>
 <html:form action="/Admin">

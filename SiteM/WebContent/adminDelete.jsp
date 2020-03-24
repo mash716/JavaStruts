@@ -7,23 +7,26 @@
 <title>User Delete</title>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/sample.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
 <div id="js-target">
 <h1>ユーザ削除画面</h1>
 </div>
-<P>
+<P id="menu">
    現在の登録者は下記の通りです
-   <TABLE BORDER="1">
+   <TABLE id="menu1" border="1" bordercolor="#ff6666" cellspacing="0" >
       <TR>
-         <TH>ID</TH>
-         <TH>パスワード</TH>
-         <TH>名前</TH>
-         <TH>アドレス</TH>
-         <TH>年齢</TH>
+         <TH  onMouseover="openMenu(1)" onMouseout="closeMenu()">ID</TH>
+         <TH  onMouseover="openMenu(2)" onMouseout="closeMenu()">パスワード</TH>
+         <TH  onMouseover="openMenu(3)" onMouseout="closeMenu()">名前</TH>
+         <TH  onMouseover="openMenu(4)" onMouseout="closeMenu()">アドレス</TH>
+         <TH  onMouseover="openMenu(5)" onMouseout="closeMenu()">年齢</TH>
       </TR>
       <!-- 登録者の一覧を表示するエリア -->
+
      <logic:iterate
         id="login"
         name="userslist">
@@ -34,6 +37,7 @@
                  property="userid"
                  scope="page" />
            </TD>
+
            <TD>
               <bean:write
                  name="login"

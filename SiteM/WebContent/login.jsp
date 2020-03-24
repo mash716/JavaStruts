@@ -6,7 +6,10 @@
 <head><title>ログイン画面だで</title></head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/alert.js"></script>
+<script type="text/javascript" src="js/sample.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
 <body>
+<p id="RealtimeClockArea2"></p>
 <h1>ログイン画面</h1>
 <html:form action="/Login">
 	<div class="container">

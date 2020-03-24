@@ -15,6 +15,7 @@ public final class AdminAction extends Action {
                 throws Exception {
 		  request.setCharacterEncoding("utf-8");
         //formの値の取得
+
     	DynaActionForm  daf = (DynaActionForm )form;
         //jspからのプロパティ取得
         String aduser = daf.get("aduser").toString();

@@ -65,7 +65,8 @@ window.addEventListener('DOMContentLoaded', function(){
 		    'font-size': '20px'
 		  });
 	  /*jqueryでcssを使う
-	   *
+	   * CSSとjqueryは別で処理をした方がよい
+	   * 
 	   *
 	   *
 	   *

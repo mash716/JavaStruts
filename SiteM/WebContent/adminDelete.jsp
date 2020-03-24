@@ -26,7 +26,8 @@
          <TH  onMouseover="openMenu(5)" onMouseout="closeMenu()">年齢</TH>
       </TR>
       <!-- 登録者の一覧を表示するエリア -->
-
+   </TABLE>
+   <table  id="li1" border="1" bordercolor="#ff6666" onMouseover="openMenu(1)" onMouseout="closeMenu()" >
      <logic:iterate
         id="login"
         name="userslist">
@@ -37,25 +38,56 @@
                  property="userid"
                  scope="page" />
            </TD>
-
+        </TR>
+        </logic:iterate>
+    </table>
+    <table id="li2" border="1" bordercolor="#ff6666" onMouseover="openMenu(2)" onMouseout="closeMenu()">
+         <logic:iterate
+        id="login"
+        name="userslist">
+		<TR>
            <TD>
               <bean:write
                  name="login"
                  property="password"
                  scope="page" />
            </TD>
+        </TR>
+        </logic:iterate>
+    </table>
+    <table id="li3" border="1" bordercolor="#ff6666" onMouseover="openMenu(3)" onMouseout="closeMenu()">
+         <logic:iterate
+        id="login"
+        name="userslist">
+        <TR>
            <TD>
               <bean:write
                  name="login"
                  property="name"
                  scope="page" />
            </TD>
+        </TR>
+        </logic:iterate>
+     </table>
+     <table id="li4" border="1" bordercolor="#ff6666" onMouseover="openMenu(4)" onMouseout="closeMenu()">
+       <logic:iterate
+        id="login"
+        name="userslist">
+        <TR>
            <TD>
               <bean:write
                  name="login"
                  property="adress"
                  scope="page" />
            </TD>
+        </TR>
+		</logic:iterate>
+     </table>
+     <table id="li5" border="1" bordercolor="#ff6666" onMouseover="openMenu(5)" onMouseout="closeMenu()">
+       <logic:iterate
+        id="login"
+        name="userslist">
+        <TR>
            <TD>
               <bean:write
                  name="login"
@@ -63,8 +95,8 @@
                  scope="page" />
            </TD>
         </TR>
-     </logic:iterate>
-   </TABLE>
+        </logic:iterate>
+     </table>
 </P>
 <html:form  action="/Delete"  >
 <div id="js-target1">

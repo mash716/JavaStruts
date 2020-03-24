@@ -17,10 +17,10 @@ p:RealtimeClockArea2{
     border-collapse:separate;
 	border-spacing:0px;
 }
-#li1, #li2, #li3, #li4   {
+#li1, #li2, #li3, #li4 ,#li5  {
 	border-color:#ff6666;
     position:    absolute;
-    width:        200px;        /*　リストの幅　*/
+    width:        100px;        /*　リストの幅　*/
     background:    #fff;        /*　背景色　*/
     display:    none;
 }
@@ -34,15 +34,15 @@ p:RealtimeClockArea2{
 }
 #li3    {
     top:        29;        /*　表示位置　*/
-    left:        400;
+    left:        200;
 }
 #li4    {
     top:        29;        /*　表示位置　*/
-    left:        400;
+    left:        200;
 }
 #li5    {
     top:        29;        /*　表示位置　*/
-    left:        400;
+    left:        200;
 }
 a    {
     padding:    2px;

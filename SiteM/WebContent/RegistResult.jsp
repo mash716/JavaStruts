@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <script type="text/javascript" src="js/alert.js"></script>
 <body>
-
+<!-- テスト -->
 <bean:write name="RegistForm" property="userid"
             scope="request" ignore="true" /><br>
 <bean:write name="RegistForm" property="password"

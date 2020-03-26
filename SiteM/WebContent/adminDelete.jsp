@@ -18,22 +18,22 @@
 </div>
 <P id="menu">
    現在の登録者は下記の通りです
-   <TABLE id="menu1" border="1" bordercolor="#ff6666" cellspacing="0" >
-      <TR>
+   <table id="menu1" border="1" bordercolor="#ff6666" cellspacing="0" >
+      <tr>
          <TH  onMouseover="openMenu(1)" onMouseout="closeMenu()">ID</TH>
          <TH  onMouseover="openMenu(2)" onMouseout="closeMenu()">パスワード</TH>
          <TH  onMouseover="openMenu(3)" onMouseout="closeMenu()">名前</TH>
          <TH  onMouseover="openMenu(4)" onMouseout="closeMenu()">アドレス</TH>
          <TH  onMouseover="openMenu(5)" onMouseout="closeMenu()">年齢</TH>
-      </TR>
+      </tr>
       <!-- 登録者の一覧を表示するエリア -->
-   </TABLE>
+   </table>
    <table  id="li1" border="1" bordercolor="#ff6666" onMouseover="openMenu(1)" onMouseout="closeMenu()" >
      <logic:iterate
         id="login"
         name="userslist">
-        <TR>
-           <TD>
+        <tr>
+           <td>
            <html:form  action="/Delete"  >
                <html:hidden name="login" property="password"/>
 		       <html:hidden name="login" property="userid"/>
@@ -43,30 +43,30 @@
                  property="userid"
                  scope="page" />
            </html:form>
-           </TD>
-        </TR>
+           </td>
+        </tr>
         </logic:iterate>
     </table>
     <table id="li2" border="1" bordercolor="#ff6666" onMouseover="openMenu(2)" onMouseout="closeMenu()">
          <logic:iterate
         id="login"
         name="userslist">
-		<TR>
-           <TD>
+		<tr>
+           <td>
               <bean:write
                  name="login"
                  property="password"
                  scope="page" />
-           </TD>
-        </TR>
+           </td>
+        </tr>
         </logic:iterate>
     </table>
     <table id="li3" border="1" bordercolor="#ff6666" onMouseover="openMenu(3)" onMouseout="closeMenu()">
          <logic:iterate
         id="login"
         name="userslist">
-        <TR>
-           <TD>
+        <tr>
+           <td>
            <html:form  action="/Login"  >
                <html:hidden name="login" property="password"/>
 		       <html:hidden name="login" property="userid"/>
@@ -76,36 +76,36 @@
                  property="name"
                  scope="page" />
             </html:form>
-           </TD>
-        </TR>
+           </td>
+        </tr>
         </logic:iterate>
      </table>
      <table id="li4" border="1" bordercolor="#ff6666" onMouseover="openMenu(4)" onMouseout="closeMenu()">
        <logic:iterate
         id="login"
         name="userslist">
-        <TR>
-           <TD>
+        <tr>
+           <td>
               <bean:write
                  name="login"
                  property="adress"
                  scope="page" />
-           </TD>
-        </TR>
+           </td>
+        </tr>
 		</logic:iterate>
      </table>
      <table id="li5" border="1" bordercolor="#ff6666" onMouseover="openMenu(5)" onMouseout="closeMenu()">
        <logic:iterate
         id="login"
         name="userslist">
-        <TR>
-           <TD>
+        <tr>
+           <td>
               <bean:write
                  name="login"
                  property="age"
                  scope="page" />
-           </TD>
-        </TR>
+           </td>
+        </tr>
         </logic:iterate>
      </table>
 </P>

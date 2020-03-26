@@ -29,8 +29,18 @@ public class RegisterDao extends Action{
 	        pStmt.setString(5, accountbean.getAge());
 
 	        System.out.println(accountbean.getUserid());
-			//select文を実行し、結果表を取得
-			int result = pStmt.executeUpdate();
+			//select文を実行し、結果表を取得 1000件入れたい場合のループ文
+	        int result = pStmt.executeUpdate();
+
+			/*
+			 *10000件insert文実行
+			 *かぶらないようにするには、数値の所にinsert文でincrementを実行する
+			 *プライマリを確認する事が重要である
+			 * */
+//		    int n = 10000;
+//	        for(int i=0;i < n;i++) {
+//	        	pStmt.executeUpdate();
+//	        }
 
 	        if(result != 1) {
 	        	return false;

@@ -12,6 +12,7 @@
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+<p id="RealtimeClockArea2"></p>
 <div id="js-target">
 <h1>ユーザ削除画面</h1>
 </div>
@@ -33,10 +34,15 @@
         name="userslist">
         <TR>
            <TD>
+           <html:form  action="/Delete"  >
+               <html:hidden name="login" property="password"/>
+		       <html:hidden name="login" property="userid"/>
+           <html:submit property="submit"  value="削除" styleId="delete" />
               <bean:write
                  name="login"
                  property="userid"
                  scope="page" />
+           </html:form>
            </TD>
         </TR>
         </logic:iterate>
@@ -61,10 +67,15 @@
         name="userslist">
         <TR>
            <TD>
+           <html:form  action="/Login"  >
+               <html:hidden name="login" property="password"/>
+		       <html:hidden name="login" property="userid"/>
+               <html:submit property="submit"  value="移動"  />
               <bean:write
                  name="login"
                  property="name"
                  scope="page" />
+            </html:form>
            </TD>
         </TR>
         </logic:iterate>

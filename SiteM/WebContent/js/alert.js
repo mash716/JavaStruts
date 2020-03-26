@@ -66,7 +66,7 @@ window.addEventListener('DOMContentLoaded', function(){
 		  });
 	  /*jqueryでcssを使う
 	   * CSSとjqueryは別で処理をした方がよい
-	   * 
+	   *
 	   *
 	   *
 	   *

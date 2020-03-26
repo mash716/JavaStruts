@@ -20,6 +20,7 @@ public class RegisterDao2 extends Action{
 			//select文を準備
 			String sql = "INSERT ignore INTO `register_struts` ( `userid`, `password`, `name`, `adress`, `age` ) VALUES (?,?,?,?,?)";
 
+
 			PreparedStatement pStmt = conn.prepareStatement(sql);
 	        pStmt.setString(1, accountbean.getUserid());
 	        pStmt.setString(2, accountbean.getPassword());
@@ -27,6 +28,7 @@ public class RegisterDao2 extends Action{
 	        pStmt.setString(3, accountbean.getName());
 	        pStmt.setString(4, accountbean.getAdress());
 	        pStmt.setString(5, accountbean.getAge());
+
 
 	        System.out.println(accountbean.getUserid());
 			//select文を実行し、結果表を取得

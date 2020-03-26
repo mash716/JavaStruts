@@ -11,6 +11,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
 <body>
+<p id="RealtimeClockArea2"></p>
 <html:hidden name="LoginForm" property="password"/>
 <html:hidden name="LoginForm" property="userid"/>
 

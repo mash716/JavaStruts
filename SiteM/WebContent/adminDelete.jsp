@@ -20,11 +20,11 @@
    現在の登録者は下記の通りです
    <table id="menu1" border="1" bordercolor="#ff6666" cellspacing="0" >
       <tr>
-         <TH  onMouseover="openMenu(1)" onMouseout="closeMenu()">ID</TH>
-         <TH  onMouseover="openMenu(2)" onMouseout="closeMenu()">パスワード</TH>
-         <TH  onMouseover="openMenu(3)" onMouseout="closeMenu()">名前</TH>
-         <TH  onMouseover="openMenu(4)" onMouseout="closeMenu()">アドレス</TH>
-         <TH  onMouseover="openMenu(5)" onMouseout="closeMenu()">年齢</TH>
+         <th  onMouseover="openMenu(1)" onMouseout="closeMenu()">ID</th>
+         <th  onMouseover="openMenu(2)" onMouseout="closeMenu()">パスワード</th>
+         <th  onMouseover="openMenu(3)" onMouseout="closeMenu()">名前</th>
+         <th  onMouseover="openMenu(4)" onMouseout="closeMenu()">アドレス</th>
+         <th  onMouseover="openMenu(5)" onMouseout="closeMenu()">年齢</th>
       </tr>
       <!-- 登録者の一覧を表示するエリア -->
    </table>
